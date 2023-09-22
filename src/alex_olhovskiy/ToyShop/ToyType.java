@@ -1,14 +1,14 @@
 package alex_olhovskiy.ToyShop;
 
 public enum ToyType {
-	Designer("Детский конструктор"),
-	Doll("Кукла"),
-	Board_game("Настольная игра"),
-	Book("Комикс"),
-	Car("Машинка"),
-	Train("Паровозик"),
-	Plane("Самолетик"),
-	Soldiers("Солдатики");
+	Designer("The children's designer"),
+	Doll("Doll"),
+	Board_game("Board game"),
+	Book("Comic"),
+	Car("Children's car"),
+	Train("little train"),
+	Plane("Airplane"),
+	Soldiers("Toy soldiers");
 	
 	private String name;
 	

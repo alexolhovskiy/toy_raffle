@@ -13,20 +13,20 @@ public class ToyShop {
 		ArrayList<MyToy>takingToies=new ArrayList<>();
 		
 		allToies=randomFill(10);
-		System.out.println("Изначальный пул игрушек, участвующих в розыгрыше");
+		System.out.println("Initial pool of toys participating in the drawing");
 		System.out.println(allToies);
 		String c="";
 		while(!c.equals("q"))
 		{
-			System.out.println("Нажмите любую клавишу чтобы продолжить цикл розыгрыша");
+			System.out.println("Press any key to continue the drawing cycle");
 			c=input.next();
 			
 			ArrayList<MyToy>temp=(takeSample(allToies,allToies.size()));
 			deltaArr(allToies,temp);
 			vinningToies.addAll(temp);
-			System.out.println("Выиграные игрушки");
+			System.out.println("Won toys");
 			System.out.println(vinningToies);
-			System.out.println("Игрушки оставшиеся не выиграными");
+			System.out.println("Toys left unwon");
 			System.out.println(allToies);
 			
 			for(int i=0;i<vinningToies.size();i++)
@@ -37,12 +37,12 @@ public class ToyShop {
 			temp=takeSample(vinningToies,vinningToies.size());
 			deltaArr(vinningToies,temp);
 			takingToies.addAll(temp);
-			System.out.println("Выиграные игрушки, которые забрали");
+			System.out.println("Toys won and taken away");
 			System.out.println(takingToies);
-			System.out.println("Выиграные игрушки, которые не забрали");
+			System.out.println("Won toys that were not taken");
 			System.out.println(vinningToies);
 			
-			System.out.println("Пополненный пул разыгрываемых игрушек");
+			System.out.println("Replenished pool of raffled toys");
 			System.out.println(allToies);
 		}
 	}
